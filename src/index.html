@@ -9,6 +9,8 @@
     content="Studio Ghibli les da la bienvenida y les brinda información detallada de sus películas">
      <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
+   <header> Studio Ghibli</header>
   <body>
     <section id="navigator">
      <nav class="menu-principal">
@@ -30,7 +32,8 @@
       </div>
     </header>
    </body>
-   <section class="filters-container">
+   
+    <section class="filters-container">
     <div class="filter-individual-container" id="filter-by-name-number">
       <input type="search" class="filter-item" id="inputFilterByName" placeholder= "Escribe el nombre de tu pelicula favorita"  autocomplete="on" spellcheck="true"/>
     </div>
@@ -86,8 +89,95 @@
       <button type="button" class="button" id="refresh"> refresh </button>
     </div>
 
-</section>
+  </section>
+
+  <div class="peliculas-recomendadas contenedor">
+    <div class="contenedor-titulo-controles">
+      <h3>Películas </h3>
+      <div class="indicadores"></div>
+    </div>
+
+    <div class="contenedor-principal">
+      <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+      <div class="contenedor-carousel">
+        <div class="carousel">
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/Mononoke10.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/totoro.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/TheTaleOf19.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/Whisper9.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/ponyo16.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/OnlyYesterday.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/poko.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/arrietty17.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/castle.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/Ear22.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/kiki.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/ponyo16.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/cat13.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/spirited12.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/TheWind20.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/yamadas11.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/GraveOf.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/From18.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/Tales15.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/When21.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/porco.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+    </div>
+  </div>
+
+
+
 
    <div id="root"></div>
     <script src="main.js" type="module"></script>
+
+    <script src="data/ghibli/ghibli.js"  type="informacion"></script>
+
 </html>
