@@ -135,12 +135,12 @@ width:30%;
 }
 
 .contenedor-titulo-controles h3 {
-	color: #fff;
+	color: #0e0f0f;
 	font-size: 30px;
 }
 
 .contenedor-titulo-controles .indicadores button {
-	background: #fff;
+	background: rgb(56, 35, 173);
 	height: 3px;
 	width: 10px;
 	cursor: pointer;
@@ -150,7 +150,7 @@ width:30%;
 
 .contenedor-titulo-controles .indicadores button:hover,
 .contenedor-titulo-controles .indicadores button.activo {
-	background: red;
+	background: black;
 }
 
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
@@ -168,13 +168,13 @@ width:30%;
 .peliculas-recomendadas .contenedor-principal .flecha-derecha {
 	position: absolute;
 	border: none;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0, 0, 0, 0.3);
 	font-size: 40px;
 	height: 50%;
 	top: calc(50% - 25%);
 	line-height: 40px;
 	width: 50px;
-	color: #fff;
+	color: rgb(19, 55, 177);
 	cursor: pointer;
 	z-index: 500;
 	transition: .2s ease all;
@@ -182,7 +182,7 @@ width:30%;
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
 .peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
-	background: rgba(0,0,0, .9);
+	background: rgba(13, 110, 167, 0.9);
 }
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
