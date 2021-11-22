@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
-    <link rel="graf" href="./imagenes/studioghibli.png" type="image/png" />
+    <link rel="img" href="./imagenes/studioghibli.png" type="image/png" />
     <title>Studio Ghibli</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name= "descripcion"
@@ -24,12 +24,10 @@
     <header>
       
       <div>
-        <!-- id="navbar-logo-box">  -->
-           <!-- <img id="navbar-logo-img" src="IMG/pokemon-logo.png" alt="Pokemon logo"> -->
            <img id= "studioghibli-banner" src="IMG/studioghibli-banner.jpg" alt="banner">
       </div>
     </header>
-   </body>
+   
    <section class="filters-container">
     <div class="filter-individual-container" id="filter-by-name-number">
       <input type="search" class="filter-item" id="inputFilterByName" placeholder= "Escribe el nombre de tu pelicula favorita"  autocomplete="on" spellcheck="true"/>
@@ -85,9 +83,32 @@
     <div class="filter-individual-container"  >
       <button type="button" class="button" id="refresh"> refresh </button>
     </div>
+</section>
+  </body>
 
+
+<section class="section_movie-info" id="section_movie-info">
+   <div id="root"></div>
 </section>
 
-   <div id="root"></div>
+
+
+<footer>
+  <div class="footer-content">
+      <img src="./IMG/studioghibliblanco.png" alt="image" style="opacity:0.4;filter:alpha(opacity=40);">
+      <ul class="socials">
+          <li><a href="https://www.facebook.com/GhibliUSA" target="blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/GhibliUSA" target="blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/GhibliUSA/" target="blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>
+      <span>copyright &copy;2021 Studio Ghibli from Laboratoria</span>
+      Created by Anita Morales - Elizabeth Castilla
+      </p>
+  </div>
+</footer>
+   
     <script src="main.js" type="module"></script>
 </html>
