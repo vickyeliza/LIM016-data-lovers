@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* navigator start */
+  .menu-principal{
+    background-color: rgba(13, 110, 167, 0.9);
+    width: 100%;
+  }
+  .menu-principal ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    list-style-type: none;
+  }
+  .menu{
+    display: flex;
+    padding: 7px 10px;
+  
+  }
+  .menu a{
+    color: black;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color:#D0455F; */
+    /* background-color:#d14c4c; */
+    background-color: rgba(13, 110, 167, 0.9);
+
+}
+
+
+
+/* #navbar-logo-box {
+ background: linear-gradient(to bottom, #B30828 0%, #B30828 50%, white 50%, white 100%);
+} */
+
+#navbar-logo-img{
+ display: block;
+ margin:auto;
+ padding: 10px 10px;
+ width:40%;
+ max-width: 400px;
+}
+
+#studioghibli-banner{
+   width: 100%;
+}
+
+/* FILTERS SECTION */
+.filters-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 6px;
+   margin:10px auto;
+   justify-content: space-between;
+   max-width: 1000px;
+
+}
+
+.filter-individual-container {
+   padding: 5px ;
+}
+
+#filter-by-name-number {
+ width:100%;
+}
+
+#filter-by-type {
+width:30%;
+}
+
+#filter-order-by{
+width:30%;
+}
+
+#sort-by{
+width:30%;
+}
+
+
+#refresh{
+   width:100%;
+   height:45px;
+   text-align: center;
+   border-radius: 15px;
+   background-color: rgba(13, 110, 167, 0.9);
+   color: rgba(0,0,0,0.6);
+   cursor: pointer;
+}
+
+#refresh:hover {
+    background-color: #c3d7f5ef;
+    color: rgba(13, 110, 167, 0.9);
+
+}
+
+
+.filter-item {
+   background: #1f9acac7;
+   padding: 10px 2px;
+   border-radius: 15px;
+   border-style: 2px solid ;
+   border-color:rgba(0,0,0,0.6);
+   width:100%;
+   font-size:14px;
+   text-align:center;
+}
+
+
+.filter-item:focus{
+   outline: none;
+}
+
+.filter-item:focus::placeholder{
+   visibility: hidden;
+}
+

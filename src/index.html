@@ -1,14 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8"/>
+    <link rel="graf" href="./imagenes/studioghibli.png" type="image/png" />
+    <title>Studio Ghibli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name= "descripcion"
+    content="Studio Ghibli les da la bienvenida y les brinda información detallada de sus películas">
+     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
    <header> Studio Ghibli</header>
   <body>
-    <div id="root"></div>
+    <section id="navigator">
+     <nav class="menu-principal">
+       <ul>
+         <li class= "menu"><a href="https://www.ghibli.jp/">WEB STUDIO GHIBLI</a></li>
+         <li class= "menu"><a href="https://acortar.link/QaBUuP/">RANKING</a></li>
+         <li class= "menu"><a href="https://www.netflix.com/pe/browse/genre/81227213/">NETFLIX</a></li>
+         <li class= "menu"><a href="https://www.ghibli-museum.jp/en/">MUSEO</a></li>
+         <li class= "menu"><a href="https://www.youtube.com/watch?v=EDRmJSwrVns/">YOUTUBE</a></li>
+       </ul>
+     </nav>
+    </section>
+    <header>
+      
+      <div>
+        <!-- id="navbar-logo-box">  -->
+           <!-- <img id="navbar-logo-img" src="IMG/pokemon-logo.png" alt="Pokemon logo"> -->
+           <img id= "studioghibli-banner" src="IMG/studioghibli-banner.jpg" alt="banner">
+      </div>
+    </header>
+   </body>
+   <section class="filters-container">
+    <div class="filter-individual-container" id="filter-by-name-number">
+      <input type="search" class="filter-item" id="inputFilterByName" placeholder= "Escribe el nombre de tu pelicula favorita"  autocomplete="on" spellcheck="true"/>
+    </div>
+
+    <div class="filter-individual-container" id="filter-by-type">
+      <select id="filterByType-options" class="filter-item">
+        <option value="">Elije una opción</option>
+        <option value="all">Todas</option>
+        <option value="uno">El Viaje de Chihiro</option>
+        <option value="dos">Mi Vecino Totoro</option>
+        <option value="tres">El Increible Castillo Vagabundo</option>
+        <option value="cuatro">La Princesa Mononoke</option>
+        <option value="cinco">El Castillo en el Cielo</option>
+        <option value="seis">Kiki:Entregas a Domicilio</option>
+        <option value="siete">Ponyo y el Secreto de la Sirenita</option>
+        <option value="ocho">Nausicaá del Valle del Viento</option>
+        <option value="nueve">Se Levanta el Viento</option>
+        <option value="diez">Susurros del Corazón</option>
+        <option value="once">La Tumba de las Luciérnagas</option>
+        <option value="doce">El Regreso del Gato</option>
+        <option value="trece">Arriety y el Mundo de los Diminutos</option>
+        <option value="catorce">Earwig y la Bruja</option>
+        <option value="quince">El Recuerdo de Marmie</option>
+        <option value="diesiseis">La Colina de las Amapolas</option>
+        <option value="diesisiete">Porco Rosso</option>
+        <option value="diesiocho">On Your Mark!</option>
+        <option value="diesinueve">El Cuento de la Princesa Kaguya</option>
+        <option value="veinte">Puedo Escuchar el Mar</option>
+        <option value="veintiuno">Cuentos de Terramar</option>
+      </select>
+    </div>
+
+    <div class="filter-individual-container" id="filter-order-by" >
+      <select id="orderBy-options" class="filter-item" >
+        <option value=""> Orden </option>
+        <option value="menos valorada">Menos Valorada</option>
+        <option value="mas valorada">Más Valorada</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+    </div>
+
+    <div class="filter-individual-container" id="sort-by" >
+      <select id="sort-by-order" class="filter-item" >
+        <option value=""> Antiguedad </option>
+        <option value="Más Reciente">Nuevas</option>
+        <option value="Más Antiguas">Antiguas</option>
+        <option value="Primera">Primera</option>
+        <option value="Ultima">Última</option>
+      </select>
+  </div>
+    <div class="filter-individual-container"  >
+      <button type="button" class="button" id="refresh"> refresh </button>
+    </div>
+
+</section>
+
+   <div id="root"></div>
     <script src="main.js" type="module"></script>
-  </body>
 </html>
