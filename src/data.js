@@ -4,9 +4,9 @@ import data from "./data/ghibli/ghibli.js";
 
 
 export const sortfunction = (sortItemsValue,data) => {
-  switch ("sortItemsValue") {
-    case "score":
-  };
+  switch (sortItemsValue){}
+    
+  
 };
 
 export const anotherExample = () => {
