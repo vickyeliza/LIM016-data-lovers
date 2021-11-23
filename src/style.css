@@ -125,7 +125,47 @@ width:30%;
 .filter-item:focus::placeholder{
    visibility: hidden;
 }
+/*seccion de fundadores*/
 
+.section-fundadores {
+   margin: auto;
+   margin-top: 100px;
+   width: 430px;
+   border: 1px  
+}
+.section-fundadores-container {
+    width: 620px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.63);
+}
+.section-fundadores-container img {
+    width: 620px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.63);
+}
+@media (max-width: 480px) {
+   .section-fundadores {
+       width: 300px;
+   }
+}/*seccion de las pelis*/
+.section_movie-info {
+   margin: 0 auto;
+   margin-bottom: 200px;
+}
+
+#root {
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   width: 900px;
+   grid-gap: 30px; 
+}
 /*SECCIÓN FOOTER*/
 
 footer {

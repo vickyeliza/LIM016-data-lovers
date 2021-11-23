@@ -9,7 +9,7 @@
     content="Studio Ghibli les da la bienvenida y les brinda información detallada de sus películas">
      <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
+  <body bgcolor= #BFC9CA>
     <section id="navigator">
      <nav class="menu-principal">
        <ul>
@@ -27,7 +27,13 @@
            <img id= "studioghibli-banner" src="IMG/studioghibli-banner.jpg" alt="banner">
       </div>
     </header>
-   
+   <main>
+       <section class="section-fundadores">
+         <div class="section-fundadores-container">
+           <img class="img-fundadores" src="IMG/fundadores.png" alt="">
+           <p>Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio japonés de animación Fue fundado el 15 de junio de 1985 por los directores Hayao Miyazaki e Isao Takahata y el productor Toshio Suzuki. Seis de las películas de Studio Ghibli se encuentran entre las 10 películas de anime más taquilleras realizadas en Japón. Cuenta con cinco de sus películas fueron nominadas al Óscar a la producción cinematográfica de animación más destacada; las cintas nominadas fueron: El viaje de Chihiro (2001), El castillo ambulante (2004), El recuerdo de Marnie (2014), El viento se levanta (2013) y El cuento de la princesa Kaguya (2013). A pesar de estas numerosas nominaciones, tan solo El viaje de Chihiro fue galardonada con el Óscar.</p>
+         </div>
+   </main>
    <section class="filters-container">
     <div class="filter-individual-container" id="filter-by-name-number">
       <input type="search" class="filter-item" id="inputFilterByName" placeholder= "Escribe el nombre de tu pelicula favorita"  autocomplete="on" spellcheck="true"/>
@@ -35,37 +41,23 @@
 
     <div class="filter-individual-container" id="filter-by-type">
       <select id="filterByType-options" class="filter-item">
-        <option value="">Elije una opción</option>
+        <option value="">Elije una Opción</option>
         <option value="all">Todas</option>
-        <option value="uno">El Viaje de Chihiro</option>
-        <option value="dos">Mi Vecino Totoro</option>
-        <option value="tres">El Increible Castillo Vagabundo</option>
-        <option value="cuatro">La Princesa Mononoke</option>
-        <option value="cinco">El Castillo en el Cielo</option>
-        <option value="seis">Kiki:Entregas a Domicilio</option>
-        <option value="siete">Ponyo y el Secreto de la Sirenita</option>
-        <option value="ocho">Nausicaá del Valle del Viento</option>
-        <option value="nueve">Se Levanta el Viento</option>
-        <option value="diez">Susurros del Corazón</option>
-        <option value="once">La Tumba de las Luciérnagas</option>
-        <option value="doce">El Regreso del Gato</option>
-        <option value="trece">Arriety y el Mundo de los Diminutos</option>
-        <option value="catorce">Earwig y la Bruja</option>
-        <option value="quince">El Recuerdo de Marmie</option>
-        <option value="diesiseis">La Colina de las Amapolas</option>
-        <option value="diesisiete">Porco Rosso</option>
-        <option value="diesiocho">On Your Mark!</option>
-        <option value="diesinueve">El Cuento de la Princesa Kaguya</option>
-        <option value="veinte">Puedo Escuchar el Mar</option>
-        <option value="veintiuno">Cuentos de Terramar</option>
+        <option value="uno">Top 5</option>
+        <option value="dos">Hayao Miyazaki</option>
+        <option value="tres">Isao Takahara</option>
+        <option value="cuatro">Yoshifumi Kondó</option>
+        <option value="cinco">Hiroyuki Morita</option>
+        <option value="seis">Goró Miyazaki</option>
+        <option value="siete">Hiromasa Yonebasashi</option>
       </select>
     </div>
 
     <div class="filter-individual-container" id="filter-order-by" >
       <select id="orderBy-options" class="filter-item" >
-        <option value=""> Orden </option>
-        <option value="menos valorada">Menos Valorada</option>
-        <option value="mas valorada">Más Valorada</option>
+        <option value="">Elije una Opción</option>
+        <option value="nominada">Nominadas</option>
+        <option value="año">Año de Producción</option>
         <option value="A-Z">A-Z</option>
         <option value="Z-A">Z-A</option>
       </select>
@@ -74,28 +66,25 @@
     <div class="filter-individual-container" id="sort-by" >
       <select id="sort-by-order" class="filter-item" >
         <option value=""> Antiguedad </option>
-        <option value="Más Reciente">Nuevas</option>
-        <option value="Más Antiguas">Antiguas</option>
+        <option value="Nueva">Nuevas</option>
+        <option value="Antigua">Antiguas</option>
         <option value="Primera">Primera</option>
         <option value="Ultima">Última</option>
       </select>
   </div>
-    <div class="filter-individual-container"  >
-      <button type="button" class="button" id="refresh"> refresh </button>
-    </div>
 </section>
   </body>
 
-
+<!--sitio de las pelis en imagen-->
 <section class="section_movie-info" id="section_movie-info">
    <div id="root"></div>
 </section>
 
 
-
+<!--pie de pagina-->
 <footer>
   <div class="footer-content">
-      <img src="./IMG/studioghibliblanco.png" alt="image" style="opacity:0.4;filter:alpha(opacity=40);">
+      <img src="./IMG/studioghibliblanco.png">
       <ul class="socials">
           <li><a href="https://www.facebook.com/GhibliUSA" target="blank"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/GhibliUSA" target="blank"><i class="fa fa-twitter"></i></a></li>
@@ -104,11 +93,10 @@
   </div>
   <div class="footer-bottom">
       <p>
-      <span>copyright &copy;2021 Studio Ghibli from Laboratoria</span>
-      Created by Anita Morales - Elizabeth Castilla
+      <span>copyright &copy;2021 Studio Ghibli - Project for Laboratoria.</span>
+      By Anita Morales & Elizabeth Castilla
       </p>
   </div>
 </footer>
-   
-    <script src="main.js" type="module"></script>
-</html>
+
+<script src="main.js" type="module"></script>
